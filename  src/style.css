@@ -1,0 +1,232 @@
+
+:root {
+  font-family: Inter, Arial, sans-serif;
+    color: #e8f3ff;
+      background: #07111f;
+      }
+
+      * {
+        box-sizing: border-box;
+        }
+
+        body {
+          margin: 0;
+          }
+
+          button {
+            font: inherit;
+              cursor: pointer;
+              }
+
+              .app {
+                display: flex;
+                  min-height: 100vh;
+                  }
+
+                  .sidebar {
+                    width: 250px;
+                      background: #0b182a;
+                        border-right: 1px solid #1b3652;
+                          padding: 25px 16px;
+                            display: flex;
+                              flex-direction: column;
+                                gap: 36px;
+                                }
+
+                                .brand {
+                                  display: flex;
+                                    align-items: center;
+                                      gap: 12px;
+                                      }
+
+                                      .brand-icon {
+                                        color: #32d9ef;
+                                          font-size: 32px;
+                                          }
+
+                                          .brand strong {
+                                            display: block;
+                                              letter-spacing: 1px;
+                                              }
+
+                                              .brand small {
+                                                color: #75a4bc;
+                                                  font-size: 10px;
+                                                    letter-spacing: 2px;
+                                                    }
+
+                                                    nav {
+                                                      display: grid;
+                                                        gap: 8px;
+                                                        }
+
+                                                        nav button {
+                                                          background: transparent;
+                                                            color: #9db5cb;
+                                                              border: 1px solid transparent;
+                                                                border-radius: 10px;
+                                                                  text-align: left;
+                                                                    padding: 13px;
+                                                                    }
+
+                                                                    nav button:hover,
+                                                                    nav button.active {
+                                                                      color: #40e4f4;
+                                                                        background: #102b42;
+                                                                          border-color: #1e657b;
+                                                                          }
+
+                                                                          .sidebar-footer {
+                                                                            margin-top: auto;
+                                                                              color: #62849b;
+                                                                                font-size: 11px;
+                                                                                  letter-spacing: 2px;
+                                                                                  }
+
+                                                                                  .content {
+                                                                                    flex: 1;
+                                                                                      min-width: 0;
+                                                                                        padding: 35px;
+                                                                                        }
+
+                                                                                        .topbar {
+                                                                                          display: flex;
+                                                                                            justify-content: space-between;
+                                                                                              align-items: center;
+                                                                                                gap: 15px;
+                                                                                                  margin-bottom: 30px;
+                                                                                                  }
+
+                                                                                                  h1 {
+                                                                                                    margin: 0;
+                                                                                                      font-size: 28px;
+                                                                                                      }
+
+                                                                                                      .topbar p {
+                                                                                                        color: #7899b0;
+                                                                                                        }
+
+                                                                                                        .status {
+                                                                                                          color: #3ae3c3;
+                                                                                                            font-size: 12px;
+                                                                                                            }
+
+                                                                                                            .metrics {
+                                                                                                              display: grid;
+                                                                                                                grid-template-columns: repeat(4, minmax(0, 1fr));
+                                                                                                                  gap: 18px;
+                                                                                                                  }
+
+                                                                                                                  .metric,
+                                                                                                                  .panel {
+                                                                                                                    background: #0c1d30;
+                                                                                                                      border: 1px solid #1b3a52;
+                                                                                                                        border-radius: 16px;
+                                                                                                                          padding: 24px;
+                                                                                                                          }
+
+                                                                                                                          .metric span {
+                                                                                                                            display: block;
+                                                                                                                              color: #8eaac1;
+                                                                                                                                font-size: 13px;
+                                                                                                                                }
+
+                                                                                                                                .metric strong {
+                                                                                                                                  display: block;
+                                                                                                                                    color: #45e4f5;
+                                                                                                                                      font-size: 36px;
+                                                                                                                                        margin-top: 12px;
+                                                                                                                                        }
+
+                                                                                                                                        .panel {
+                                                                                                                                          margin-top: 25px;
+                                                                                                                                            line-height: 1.7;
+                                                                                                                                            }
+
+                                                                                                                                            .panel-heading {
+                                                                                                                                              display: flex;
+                                                                                                                                                justify-content: space-between;
+                                                                                                                                                  align-items: center;
+                                                                                                                                                    gap: 15px;
+                                                                                                                                                    }
+
+                                                                                                                                                    .panel h2 {
+                                                                                                                                                      margin: 0;
+                                                                                                                                                      }
+
+                                                                                                                                                      .panel-heading span {
+                                                                                                                                                        color: #7da6bc;
+                                                                                                                                                          font-size: 13px;
+                                                                                                                                                          }
+
+                                                                                                                                                          .panel p {
+                                                                                                                                                            color: #a4bbce;
+                                                                                                                                                            }
+
+                                                                                                                                                            .notice {
+                                                                                                                                                              margin-top: 20px;
+                                                                                                                                                                padding: 16px;
+                                                                                                                                                                  background: #102c40;
+                                                                                                                                                                    border-left: 3px solid #38d9eb;
+                                                                                                                                                                      border-radius: 8px;
+                                                                                                                                                                        color: #a7d6e4;
+                                                                                                                                                                        }
+
+                                                                                                                                                                        @media (max-width: 850px) {
+                                                                                                                                                                          .app {
+                                                                                                                                                                              flex-direction: column;
+                                                                                                                                                                                }
+
+                                                                                                                                                                                  .sidebar {
+                                                                                                                                                                                      width: 100%;
+                                                                                                                                                                                          gap: 18px;
+                                                                                                                                                                                              padding: 16px;
+                                                                                                                                                                                                }
+
+                                                                                                                                                                                                  nav {
+                                                                                                                                                                                                      display: flex;
+                                                                                                                                                                                                          overflow-x: auto;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                              nav button {
+                                                                                                                                                                                                                  white-space: nowrap;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                      .sidebar-footer {
+                                                                                                                                                                                                                          display: none;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                              .content {
+                                                                                                                                                                                                                                  padding: 20px;
+                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                      .metrics {
+                                                                                                                                                                                                                                          grid-template-columns: repeat(2, minmax(0, 1fr));
+                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                            @media (max-width: 480px) {
+                                                                                                                                                                                                                                              .metrics {
+                                                                                                                                                                                                                                                  grid-template-columns: 1fr 1fr;
+                                                                                                                                                                                                                                                      gap: 10px;
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                          .metric {
+                                                                                                                                                                                                                                                              padding: 15px;
+                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                  .metric strong {
+                                                                                                                                                                                                                                                                      font-size: 26px;
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                          .topbar {
+                                                                                                                                                                                                                                                                              align-items: flex-start;
+                                                                                                                                                                                                                                                                                  flex-direction: column;
+                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                      .panel-heading {
+                                                                                                                                                                                                                                                                                          align-items: flex-start;
+                                                                                                                                                                                                                                                                                              flex-direction: column;
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                
